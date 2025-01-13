@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast & Good</title>
+  <link rel="shortcut icon" href="Logo.png">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .background-image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+          function showNotification(event) {
+      alert("added to cart!");
+      triggerConfetti(event);
+    }
+
+    function showNotification2(event) {
+      alert("added to cart!");
+      triggerConfetti(event);
+    }
+      function triggerConfetti(event) {
+        const rect = event.target.getBoundingClientRect();
+        const x = (rect.left + rect.width / 2) / window.innerWidth;
+        const y = (rect.top + rect.height / 2) / window.innerHeight;
+        confetti({
+          particleCount: 200,
+          spread: 80,
+          origin: { x: x, y: y },
+        });
+      }
+    
+      document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', triggerConfetti);
+      });
+    </script>
+</head>
+<body>
+  <div class="background-image">
+    <img src="Your paragraph text.svg" alt="Overlay Text" style="width: 100%; margin-top: 268.5%; ">
+  </div>
+  \\* line 2*\\
+  <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+    <button style="position: absolute; top: 2990px; left: 335px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
+    </a>
+    <button onclick="showNotification2(event)" style="position: absolute; top: 3022px; left: 335px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(126, 133, 125); z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
+    \\* line 1 *\\
+    <a href="https://psa-ipba2lifelabs-tle.my.canva.site">
+    <button style="position: absolute; top: 2515px; left: 326px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
+  </a>
+  <button onclick="showNotification2(event)" style="position: absolute; top: 2547px; left: 326px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(126, 133, 125); z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
+  \\* line 3*\\
+</body>
+</html>
