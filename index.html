@@ -72,6 +72,11 @@
       document.querySelectorAll('button').forEach(button => {
         button.addEventListener('click', triggerConfetti);
       });
+
+      window.addEventListener("resize", function () {
+    alert("The site breaks if resized. Please do not resize for the optimal experience, please revert your action and return to 100 percent or defult mode.");
+});
+
     </script>
 </head>
 <body>
@@ -84,7 +89,7 @@
 <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
 <button 
   class="invisible-button" 
-  style="width: 270px; height: 57px; top: 37px; left: 1501.5px;"
+  style="width: 270px; height: 57px; top: 38.5px; left: 1503px; border-radius: 100px;"
   onclick="scrollDown('1900px')">
 </button>
 </a>
@@ -94,11 +99,35 @@
   onclick="showNotification (event)">
 </button>
 
+<a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+  <button 
+    class="invisible-button" 
+    style="width: 400px; height: 100px; top: 466px; left: 391.3px; border-radius: 100px;"
+    onclick="triggerConfetti(event)">
+  </button>
+</a>
+
 <button 
   class="invisible-button" 
   style="width: 250px; height: 57px; top: 37px; left: 653px;"
   onclick="showNotification3 (event)">
 </button>
+
+<a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+  <button style="position: absolute; top: 1481px; rotate: 346.3deg; left: 394px; font-size: 30px; font-family: cursive; border-radius: 50px; font-weight: bolder; width: 200px; height: 50px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now!</button>
+</a>
+  <button style="position: absolute; top: 1530px; rotate: 346.3deg; left: 435px; font-size: 23px; font-family: cursive; border-radius: 20px; font-weight: bolder; width: 150px; height:  40px; line-height: 25px; text-align: center; color: azure; background-color:#7e857d; z-index: 2;" onclick="showNotification2(event)">Add to cart</button>
+
+  <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+    <button style="position: absolute; top: 1465px; rotate: 346.3deg; left: 1036px; font-size: 30px; font-family: cursive; border-radius: 50px; font-weight: bolder; width: 200px; height: 50px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now!</button>
+  </a>
+    <button style="position: absolute; top: 1513px; rotate: 346.3deg; left: 1078px; font-size: 23px; font-family: cursive; border-radius: 20px; font-weight: bolder; width: 150px; height:  40px; line-height: 25px; text-align: center; color: azure; background-color:#7e857d; z-index: 2;" onclick="showNotification2(event)">Add to cart</button>
+    
+    <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+      <button style="position: absolute; top: 1457px; rotate: 346.3deg; left: 1565px; font-size: 30px; font-family: cursive; border-radius: 50px; font-weight: bolder; width: 200px; height: 50px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now!</button>
+    </a>
+      <button style="position: absolute; top: 1505px; rotate: 346.3deg; left: 1605px; font-size: 23px; font-family: cursive; border-radius: 20px; font-weight: bolder; width: 150px; height:  40px; line-height: 25px; text-align: center; color: azure; background-color:#7e857d; z-index: 2;" onclick="showNotification2(event)">Add to cart</button>
+    
 
   <div class="background-image">
     <img src="Your paragraph text.svg" alt="Overlay Text" style="width: 100%; margin-top: 268.5%; ">
@@ -106,7 +135,7 @@
   <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
     <button style="position: absolute; top: 2990px; left: 335px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
     </a>
-    <button onclick="showNotification2(event)" style="position: absolute; top: 3022px; left: 335px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(126, 133, 125); z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
+    <button onclick="showNotification2(event)" style="position: absolute; top: 3022px; left: 335px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:#7e857d; z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
     <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
       <button style="position: absolute; top: 2990px; left: 758px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
       </a>
@@ -184,5 +213,24 @@
         <button style="position: absolute; top: 4579px; left: 1409px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
         </a>
         <button onclick="showNotification2(event)" style="position: absolute; top: 4579px; left: 1514px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(126, 133, 125); z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
-</body>
+        <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+          <button style="position: absolute; top: 5406px; left: 1485px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
+          </a>
+          <button onclick="showNotification2(event)" style="position: absolute; top: 5449px; left: 1485px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(126, 133, 125); z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
+
+          <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+            <button style="position: absolute; top: 5412px; left: 860px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
+            </a>
+            <button onclick="showNotification2(event)" style="position: absolute; top: 5455px; left: 860px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(126, 133, 125); z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
+            
+            <a href="https://psa-ipba2lifelabs-tle.my.canva.site" target="_blank">
+              <button style="position: absolute; top: 5412px; left: 232px; font-size: 15px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(27, 114, 24); z-index: 2;" onclick="triggerConfetti(event)">Order now</button>
+              </a>
+              <button onclick="showNotification2(event)" style="position: absolute; top: 5455px; left: 232px; font-size: 14px; font-family: cursive; border-radius: 10px; font-weight: bolder; width: 100px; height: 30px; line-height: 25px; text-align: center; color: azure; background-color:rgb(126, 133, 125); z-index: 2;" onclick="triggerConfetti(event)">Add to cart</button>
+<footer style="position: absolute; top: 5880px; left: 110px;">
+  <h2>
+THIS IS THE BOTTOM OF THIS WEBSITE PLEASE CLICK THE BUTTONS OR THE NAVIGATION (AT THE START OF THE WEBSITE) TO CONTINUE
+  </h2>
+</footer>
+      </body>
 </html>
